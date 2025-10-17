@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions - APSIS University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">ADMISSIONS</a></li>
+            <li><a href="blog.html">ACADEMICS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Admissions</h1>
+    </section>
+
+    <!-- Admissions Introduction Section -->
+    <section class="admission-intro">
+  <div class="intro-container">
+    <h2>Join APSIS and Shape Your Future</h2>
+    <p>
+      At APSIS, we offer world-class education, vibrant extracurricular
+      activities, and global exposure to help you build a bright future.
+    </p>
+    <a href="#apply-now" class="hero-btn admission-btn">Start Your Application</a>
+  </div>
+</section>
+
+<!-- Courses Offered Section -->
+<section class="admission-courses">
+  <h2>Courses We Offer</h2>
+  <p>
+    Explore the various programs we offer to help you achieve your academic
+    and career goals.
+  </p>
+  <div class="courses-container">
+    <div class="course-item">
+      <h3>Undergraduate Programs</h3>
+      <p>
+        Our undergraduate courses prepare students for a successful career
+        by offering a mix of theory and hands-on experience. Explore our
+        wide range of undergraduate programs including business,
+        engineering, and more.
+      </p>
+    </div>
+    <div class="course-item">
+      <h3>Graduate Programs</h3>
+      <p>
+        Our graduate programs are designed for those looking to advance
+        their knowledge and skills in specialized fields. Pursue your
+        master's in engineering, business, or any other field to enhance
+        your career opportunities.
+      </p>
+    </div>
+    <div class="course-item">
+      <h3>Online Courses</h3>
+      <p>
+        We offer a range of online courses designed to fit the needs of busy
+        professionals. Learn at your own pace while gaining practical
+        knowledge in your field.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- How to Apply Section -->
+<section class="apply-steps-section" id="apply-now">
+  <h2>How to Apply</h2>
+  <p>
+    Follow these simple steps to begin your journey at APSIS University.
+  </p>
+  <div class="apply-steps">
+    <div class="apply-step">
+      <i class="fa fa-pencil-square-o"></i>
+      <h3>Step 1: Fill Out the Application</h3>
+      <p>
+        Complete our online application form with your personal information
+        and educational background.
+      </p>
+    </div>
+    <div class="apply-step">
+      <i class="fa fa-upload"></i>
+      <h3>Step 2: Submit Documents</h3>
+      <p>
+        Upload the required documents such as transcripts, proof of
+        identity, and recommendation letters.
+      </p>
+    </div>
+    <div class="apply-step">
+      <i class="fa fa-clock-o"></i>
+      <h3>Step 3: Interview and Assessment</h3>
+      <p>
+        Depending on the course, you may need to attend an interview or
+        assessment as part of the selection process.
+      </p>
+    </div>
+    <div class="apply-step">
+      <i class="fa fa-check-circle"></i>
+      <h3>Step 4: Acceptance and Confirmation</h3>
+      <p>
+        If accepted, you will receive an offer letter and instructions on
+        how to confirm your place at APSIS.
+      </p>
+    </div>
+  </div>
+  <a href="contact.html" class="hero-btn admission-btn">Apply Now</a>
+</section>
+
+    <!-- ----- Footer --------- -->
+
+    <section class="footer">
+      <h4>About APSIS</h4>
+      <p>
+        Army Public School for International Studies (APSIS) is committed to
+        academic excellence, character building, and global citizenship through
+        a safe, modern, and values-driven learning environment.
+      </p>
+
+      <div class="footer-links">
+        <a href="About.html">About</a>
+        <a href="courses.html">Admissions</a>
+        <a href="Blog.html">Academics</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="icon">
+        <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fa fa-linkedin-square"></i
+        ></a>
+      </div>
+
+      <p class="footer-meta">
+        APSIS, Hyderabad Cantonments — opposite CMH Hyderabad<br />
+        <span>© <span id="year"></span> APSIS. All rights reserved.</span>
+      </p>
+    </section>
+
+    <script>
+      // auto year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

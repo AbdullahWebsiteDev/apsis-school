@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>university website design - Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="courses.html">Admissions</a></li>
+            <li><a href="Blog.html">Academics</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!-- ------------------------ About Us content ------------------------ -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Our Vision: Building the Future</h1>
+          <p>
+            APSIS strives to be a pioneer in global education, developing
+            well-rounded individuals who will excel in their respective fields.
+            We offer a comprehensive curriculum that is inclusive, diverse, and
+            tailored to the needs of tomorrow's leaders.
+          </p>
+
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+          <img src="images/about.jpg" alt="About Us" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="about-col">
+          <img src="images/about 2.jpg" alt="About Us" />
+        </div>
+        <div class="about-col">
+          <h1>Our Commitment</h1>
+          <p>
+            APSIS is committed to creating a transformative learning experience
+            for students across the globe. With top-notch facilities, expert
+            faculty, and a culture of innovation, we aim to mold future leaders
+            who can contribute meaningfully to society.
+          </p>
+
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Community Says</h2>
+      <p>Hear from those who have experienced APSIS firsthand.</p>
+
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p>
+            "APSIS provided me with the best academic and extracurricular
+            experience, preparing me for success in my career and life."
+          </p>
+          <h3>John Doe</h3>
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            "A school that not only excels in academics but also focuses on
+            overall student growth. It's been an amazing experience!"
+          </p>
+          <h3>Jane Smith</h3>
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- Footer --------- -->
+
+     <section class="footer">
+      <h4>About APSIS</h4>
+      <p>
+        Army Public School for International Studies (APSIS) is committed to
+        academic excellence, character building, and global citizenship through
+        a safe, modern, and values-driven learning environment.
+      </p>
+
+      <div class="footer-links">
+        <a href="About.html">About</a>
+        <a href="courses.html">Admissions</a>
+        <a href="Blog.html">Academics</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="icon">
+        <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"
+          ><i class="fa fa-linkedin-square"></i
+        ></a>
+      </div>
+
+      <p class="footer-meta">
+        APSIS, Hyderabad Cantonments — opposite CMH Hyderabad<br />
+        <span>© <span id="year"></span> APSIS. All rights reserved.</span>
+      </p>
+    </section>
+
+    <script>
+      // auto year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- ------------------------JavaScript for toggle menu--------------------------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
